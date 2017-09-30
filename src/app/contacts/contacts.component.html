@@ -1,0 +1,29 @@
+<h5>Cadastro novo</h5>
+
+<form #f="ngForm" (inserirContact)="inserirContact(f)">
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input
+    type="text" class="form-control" name="Name"
+     [(ngModel)]="inputName" /> <br />
+    </div>
+
+    <div class="form-group">
+      <label for="number">Phone</label>
+      <input
+      type="number" class="form-control" name="Phone"
+       [(ngModel)]="inputPhone" required number/> <br />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+        type="email" class="form-control" name="Email"
+         [(ngModel)]="inputEmail" required email/> <br />
+        </div>
+
+</form>
+
+<button (click)="inserirContact()">
+Inserir
+</button>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none
+}
+</style>
+</head>
+<body>
+
+  <h5>Lista de Contatos </h5>
+ <p></p>
+ <p></p>
+  <div *ngFor="let contact of contacts">
+
+<ul>
+  <li><strong>Name:</strong> {{contact.name}} <br></li>
+  <li><strong>Phone:</strong> {{contact.phone}}<br></li>
+  <li><strong>Email:</strong> {{contact.email}}</li>
+</ul>
+</div>
+
+</body>
+</html>
